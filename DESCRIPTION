@@ -1,10 +1,12 @@
 Package: SenSmooth
-Title: Sen and Siegel Smooth Methods
+Title: Thiel-Sen and Siegel Smooth Methods
 Version: 0.0.0.9000
 Authors@R: 
     person("Daniel", "Nidzgorski", , "dnidz@civiceco.org", role = c("aut", "cre"))
-Description: This package adds Sen and Siegel non-parametric smooth methods for use in ggplot2::ggsmooth(). These methods calculate slopes between all pairs of points. The Sen method takes the median slope, and the Siegel method takes the nested median. 
+Description: This package makes two median-based smooth methods from the 'mblm' package available for use in ggplot2::geom_smooth(): the Thiel-Sen median slope and the Siegel nested-median slope. 
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
+Imports: 
+    mblm
